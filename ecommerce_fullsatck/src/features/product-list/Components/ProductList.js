@@ -25,11 +25,9 @@ import {
 import { Link } from "react-router-dom";
 
 const sortOptions = [
-  { name: "Most Popular", href: "#", current: true },
-  { name: "Best Rating", href: "#", current: false },
-  { name: "Newest", href: "#", current: false },
-  { name: "Price: Low to High", href: "#", current: false },
-  { name: "Price: High to Low", href: "#", current: false },
+  { name: "Best Rating", sort : "rating", order : "desc" , current: false },
+  { name: "Price: Low to High", sort: "price", order:"asc" , current: false },
+  { name: "Price: High to Low", sort: "price", order:"desc" , current: false },
 ];
 const filters = [
   {
@@ -244,9 +242,12 @@ export default function ProductList() {
     const newFilter ={...filter,[section.id]:option.value}
     setFilter(newFilter)
     dispatch(fetchAllProductByFilterAsync(newFilter))
-    
+  }
 
-
+  const handelSort=(e,option)=>{
+    const newFilter={...filter,_sort:option.sort,order:option.order};
+    setFilter(newFilter)
+    dispatch(fetchAllProductByFilterAsync(newFilter))
   }
 
   return (
@@ -399,8 +400,8 @@ export default function ProductList() {
                           {sortOptions.map((option) => (
                             <Menu.Item key={option.name}>
                               {({ active }) => (
-                                <a
-                                  href={option.href}
+                                <p
+                                  onClick={e=>handelSort(e,option)}
                                   className={classNames(
                                     option.current
                                       ? "font-medium text-gray-900"
@@ -410,7 +411,7 @@ export default function ProductList() {
                                   )}
                                 >
                                   {option.name}
-                                </a>
+                                </p>
                               )}
                             </Menu.Item>
                           ))}
@@ -530,13 +531,13 @@ export default function ProductList() {
                                 <div className="mt-4 flex justify-between">
                                   <div>
                                     <h3 className="text-sm text-gray-700">
-                                      <a href={product.thumbnail}>
+                                      <div href={product.thumbnail}>
                                         <span
                                           aria-hidden="true"
                                           className="absolute inset-0"
                                         />
                                         {product.title}
-                                      </a>
+                                      </div>
                                     </h3>
                                     <p className="mt-1 text-sm text-gray-500">
                                       <StarIcon className="w-6 h-6 inline"></StarIcon>

@@ -12,7 +12,11 @@ export function fetchAllProduct() {
 export function fetchAllProductByFilter(filter) {
   let queryString=''
   for(let key in filter){
+    if(key=="order"){
+      continue;
+    }
     queryString+=`${key}=${filter[key]}&`
+    console.log(queryString)
   }
 
   return new Promise(async (resolve) =>{

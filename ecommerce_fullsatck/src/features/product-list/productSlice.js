@@ -22,6 +22,10 @@ export const fetchAllProductByFilterAsync = createAsyncThunk(
   async (filter) => {
     const response = await fetchAllProductByFilter(filter);
     // The value we return becomes the `fulfilled` action payload
+    if(filter.order=="desc"){
+      const descData=response.data;
+      return descData.reverse();
+    }
     return response.data;
   }
 );
