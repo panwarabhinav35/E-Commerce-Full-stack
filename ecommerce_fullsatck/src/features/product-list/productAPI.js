@@ -16,8 +16,6 @@ export function fetchAllProductByFilter(filter, sort,pagination) {
       queryString += `${key}=${lastCatValue}&`;
     }
   }
-
-  console.log(pagination)
   for(let key in pagination){
     queryString += `${key}=${pagination[key]}&`;
   }
@@ -28,6 +26,7 @@ export function fetchAllProductByFilter(filter, sort,pagination) {
     }
     queryString += `${key}=${sort[key]}&`;
   }
+  console.log(queryString)
   return new Promise(async (resolve) => {
     const response = await fetch(
       "http://localhost:8080/products?" + queryString
@@ -35,5 +34,22 @@ export function fetchAllProductByFilter(filter, sort,pagination) {
     const data = await response.json();
     
     resolve( {data});
+  });
+}
+
+export function fetchCategories() {
+  return new Promise(async (resolve) => {
+    const response = await fetch("http://localhost:8080/categories");
+    const data = await response.json();
+    resolve({ data });
+  });
+}
+
+
+export function fetchBrands() {
+  return new Promise(async (resolve) => {
+    const response = await fetch("http://localhost:8080/brands");
+    const data = await response.json();
+    resolve({ data });
   });
 }
