@@ -48,7 +48,9 @@
       "brand": "Samsung",
       "category": "smartphones",
       "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
-      "images": ["https://cdn.dummyjson.com/product-images/3/1.jpg"]
+      "images": [
+        "https://cdn.dummyjson.com/product-images/3/1.jpg"
+      ]
     },
     {
       "id": 4,
@@ -1426,7 +1428,9 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://cdn.dummyjson.com/product-images/78/thumbnail.jpg",
-      "images": ["https://cdn.dummyjson.com/product-images/78/thumbnail.jpg"]
+      "images": [
+        "https://cdn.dummyjson.com/product-images/78/thumbnail.jpg"
+      ]
     },
     {
       "id": 79,
@@ -1439,7 +1443,9 @@
       "brand": "Fashion Jewellery",
       "category": "womens-jewellery",
       "thumbnail": "https://cdn.dummyjson.com/product-images/79/thumbnail.jpg",
-      "images": ["https://cdn.dummyjson.com/product-images/79/1.jpg"]
+      "images": [
+        "https://cdn.dummyjson.com/product-images/79/1.jpg"
+      ]
     },
     {
       "id": 80,
@@ -1834,7 +1840,6 @@
       ]
     }
   ],
-
   "brands": [
     {
       "value": "Apple",
@@ -2207,7 +2212,6 @@
       "checked": false
     }
   ],
-
   "categories": [
     {
       "value": "smartphones",
@@ -2308,6 +2312,28 @@
       "value": "lighting",
       "label": "lighting",
       "checked": false
+    }
+  ],
+  "users": [
+    {
+      "id": "a833",
+      "email": "abc@gmail.com",
+      "password": "Vkone@1eight"
+    },
+    {
+      "id": "d23b",
+      "email": "abc23@gmail.com",
+      "password": "Abhi@1234"
+    },
+    {
+      "id": "9136",
+      "email": "abhinav.panwar.cs.2019@miet.ac.in",
+      "password": "abcdeF@1234"
+    },
+    {
+      "id": "89c7",
+      "email": "abhinav.panwar.cs.2019@miet.ac.i",
+      "password": "Shivamnody@1234"
     }
   ]
 }
