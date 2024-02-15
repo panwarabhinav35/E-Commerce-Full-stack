@@ -1,11 +1,11 @@
-import './App.css';
-import CartPage from './pages/CartPage';
-import Checkout from './pages/Checkout';
-import Home from './pages/Home';
-import LoginPage from './pages/LoginPage';
-import ProductDetailPage from './pages/ProductDetailPage';
-import SignupPage from './pages/SignupPage';
-
+import "./App.css";
+import Protected from "./features/auth/Components/Protected";
+import CartPage from "./pages/CartPage";
+import Checkout from "./pages/Checkout";
+import Home from "./pages/Home";
+import LoginPage from "./pages/LoginPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import SignupPage from "./pages/SignupPage";
 
 import {
   createBrowserRouter,
@@ -17,7 +17,11 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: (
+      <Protected>
+        <Home></Home>
+      </Protected>
+    ),
   },
   {
     path: "/login",
@@ -29,18 +33,29 @@ const router = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <CartPage></CartPage>
+    element: (
+      <Protected>
+        <CartPage></CartPage>
+      </Protected>
+    ),
   },
   {
     path: "/checkout",
-    element: <Checkout></Checkout>
+    element: (
+      <Protected>
+        <Checkout></Checkout>
+      </Protected>
+    ),
   },
   {
     path: "/product-detail/:id",
-    element: <ProductDetailPage></ProductDetailPage>
+    element: (
+      <Protected>
+        <ProductDetailPage></ProductDetailPage>
+      </Protected>
+    ),
   },
 ]);
-
 
 function App() {
   return (

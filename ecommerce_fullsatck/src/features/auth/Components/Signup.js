@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { createUserAsync, selectLoggedInUser } from "../authSlice";
 // import { increment, incrementAsync, selectCount } from "./counterSlice";
@@ -19,7 +19,7 @@ export default function Signup() {
 
   return (
     <div>
-      {loggedInUser?.email}
+      {loggedInUser && <Navigate to='/' replace={true}></Navigate>}
       <div>
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
