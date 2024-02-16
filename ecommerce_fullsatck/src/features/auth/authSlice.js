@@ -22,7 +22,6 @@ export const checkUserAsync = createAsyncThunk(
   'user/checkUser',
   async (loginInfo) => {
     const response = await checkUser(loginInfo);
-    console.log(response);
     // The value we return becomes the `fulfilled` action payload
     
     return response.data;
