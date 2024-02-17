@@ -8,7 +8,7 @@ import {
 } from "../features/Cart/cartSlice";
 import { useForm } from "react-hook-form";
 import { selectLoggedInUser, updateUserAsync } from "../features/auth/authSlice";
-import { createOrderAsync } from "../features/order/orderSlice";
+import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
 
 
 
@@ -49,17 +49,19 @@ const Checkout = () => {
   }
 
   const handleOrder=(e)=>{
-    const order ={products, totalAmount, totalItems, user ,paymentMethod , selectedAddress}
+    const order ={products, totalAmount, totalItems, user ,paymentMethod , selectedAddress, status:'Pending'}
     dispatch(createOrderAsync(order))
     //todo redirect to order success page
     // todo clear cart after order
     // to do on server cahnge the stock nuber of items 
   }
   const user = useSelector(selectLoggedInUser)
+  const currentOrder =useSelector(selectCurrentOrder)
 
   return (
     <>
       {products.length === 0 && <Navigate to="/" replace={true}></Navigate>}
+      {currentOrder && <Navigate to={`/order-success/${currentOrder.id}`}></Navigate>}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
           <div className="lg:col-span-3">

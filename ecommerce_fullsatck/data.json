@@ -2462,75 +2462,13 @@
       "password": "Shivamnody@1234"
     }
   ],
-  "cart": [
-    {
-      "id": "7cdc",
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
-    },
-    {
-      "id": "c166",
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/2/1.jpg",
-        "https://cdn.dummyjson.com/product-images/2/2.jpg",
-        "https://cdn.dummyjson.com/product-images/2/3.jpg",
-        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
-      ],
-      "quantity": 4,
-      "user": "58df"
-    },
-    {
-      "id": "0d6b",
-      "title": "Infinix INBOOK",
-      "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
-      "price": 1099,
-      "discountPercentage": 11.83,
-      "rating": 4.54,
-      "stock": 96,
-      "brand": "Infinix",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/9/1.jpg",
-        "https://cdn.dummyjson.com/product-images/9/2.png",
-        "https://cdn.dummyjson.com/product-images/9/3.png",
-        "https://cdn.dummyjson.com/product-images/9/4.jpg",
-        "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
-    }
-  ],
+  "cart": [],
   "orders": [
     {
-      "id": "036d",
+      "id": "1f84",
       "products": [
         {
-          "id": "7cdc",
+          "id": "5624",
           "title": "iPhone X",
           "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
           "price": 899,
@@ -2550,22 +2488,21 @@
           "user": "89c7"
         },
         {
-          "id": "0d6b",
-          "title": "Infinix INBOOK",
-          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "id": "74af",
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
           "price": 1099,
-          "discountPercentage": 11.83,
-          "rating": 4.54,
-          "stock": 96,
-          "brand": "Infinix",
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
           "category": "laptops",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
           "images": [
-            "https://cdn.dummyjson.com/product-images/9/1.jpg",
-            "https://cdn.dummyjson.com/product-images/9/2.png",
-            "https://cdn.dummyjson.com/product-images/9/3.png",
-            "https://cdn.dummyjson.com/product-images/9/4.jpg",
-            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+            "https://cdn.dummyjson.com/product-images/10/1.jpg",
+            "https://cdn.dummyjson.com/product-images/10/2.jpg",
+            "https://cdn.dummyjson.com/product-images/10/3.jpg",
+            "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
           ],
           "quantity": 1,
           "user": "89c7"
@@ -2609,14 +2546,51 @@
       },
       "paymentMethod": "cash",
       "selectedAddress": {
-        "name": "Thakur",
-        "email": "abc23@gmail.com",
+        "name": "Shashank Kumar Singh",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
         "phoneNumber": "7983013481",
         "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
         "city": "Muzaffarnagar",
         "state": "Uttar Pradesh",
         "pinCode": "251314"
-      }
+      },
+      "status": "Pending"
+    },
+    {
+      "id": "86c3",
+      "products": [
+        {
+          "id": "c166",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 4,
+          "user": "58df"
+        }
+      ],
+      "totalAmount": 3596,
+      "totalItems": 4,
+      "user": {
+        "id": "58df",
+        "email": "panwarabhinav35@gmail.com",
+        "addresses": [],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": null,
+      "status": "Pending"
     }
   ]
-}
+} 
