@@ -2412,27 +2412,59 @@
     {
       "id": "a833",
       "email": "abc@gmail.com",
+      "addresses": [],
       "password": "Vkone@1eight"
     },
     {
       "id": "d23b",
       "email": "abc23@gmail.com",
+      "addresses": [],
       "password": "Abhi@1234"
     },
     {
       "id": "89c7",
       "email": "abhinav.panwar.cs.2019@miet.ac.in",
+      "addresses": [
+        {
+          "name": "Shashank Kumar Singh",
+          "email": "abhinav.panwar.cs.2019@miet.ac.in",
+          "phoneNumber": "7983013481",
+          "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+          "city": "Muzaffarnagar",
+          "state": "Uttar Pradesh",
+          "pinCode": "251314"
+        },
+        {
+          "name": "Abhinav Panwar",
+          "email": "panwarabhinav35@gmail.com",
+          "phoneNumber": "7983013481",
+          "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+          "city": "Muzaffarnagar",
+          "state": "Uttar Pradesh",
+          "pinCode": "251314"
+        },
+        {
+          "name": "Thakur",
+          "email": "abc23@gmail.com",
+          "phoneNumber": "7983013481",
+          "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+          "city": "Muzaffarnagar",
+          "state": "Uttar Pradesh",
+          "pinCode": "251314"
+        }
+      ],
       "password": "Shivamnody@1234"
     },
     {
       "id": "58df",
       "email": "panwarabhinav35@gmail.com",
+      "addresses": [],
       "password": "Shivamnody@1234"
     }
   ],
   "cart": [
     {
-      "id": "2",
+      "id": "7cdc",
       "title": "iPhone X",
       "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
       "price": 899,
@@ -2449,68 +2481,30 @@
         "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
       ],
       "quantity": 1,
+      "user": "89c7"
+    },
+    {
+      "id": "c166",
+      "title": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 899,
+      "discountPercentage": 17.94,
+      "rating": 4.44,
+      "stock": 34,
+      "brand": "Apple",
+      "category": "smartphones",
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+      "images": [
+        "https://cdn.dummyjson.com/product-images/2/1.jpg",
+        "https://cdn.dummyjson.com/product-images/2/2.jpg",
+        "https://cdn.dummyjson.com/product-images/2/3.jpg",
+        "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+      ],
+      "quantity": 4,
       "user": "58df"
     },
     {
-      "id": "3",
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/3/1.jpg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
-    },
-    {
-      "id": "8",
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "brand": "Microsoft Surface",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/8/1.jpg",
-        "https://cdn.dummyjson.com/product-images/8/2.jpg",
-        "https://cdn.dummyjson.com/product-images/8/3.jpg",
-        "https://cdn.dummyjson.com/product-images/8/4.jpg",
-        "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
-    },
-    {
-      "id": "10",
-      "title": "HP Pavilion 15-DK1056WM",
-      "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-      "price": 1099,
-      "discountPercentage": 6.18,
-      "rating": 4.43,
-      "stock": 89,
-      "brand": "HP Pavilion",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/10/1.jpg",
-        "https://cdn.dummyjson.com/product-images/10/2.jpg",
-        "https://cdn.dummyjson.com/product-images/10/3.jpg",
-        "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
-    },
-    {
-      "id": "9",
+      "id": "0d6b",
       "title": "Infinix INBOOK",
       "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
       "price": 1099,
@@ -2529,68 +2523,100 @@
       ],
       "quantity": 1,
       "user": "89c7"
-    },
+    }
+  ],
+  "orders": [
     {
-      "id": "1",
-      "title": "iPhone 9",
-      "description": "An apple mobile which is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/1/1.jpg",
-        "https://cdn.dummyjson.com/product-images/1/2.jpg",
-        "https://cdn.dummyjson.com/product-images/1/3.jpg",
-        "https://cdn.dummyjson.com/product-images/1/4.jpg",
-        "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg"
+      "id": "036d",
+      "products": [
+        {
+          "id": "7cdc",
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/2/1.jpg",
+            "https://cdn.dummyjson.com/product-images/2/2.jpg",
+            "https://cdn.dummyjson.com/product-images/2/3.jpg",
+            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        },
+        {
+          "id": "0d6b",
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/9/1.jpg",
+            "https://cdn.dummyjson.com/product-images/9/2.png",
+            "https://cdn.dummyjson.com/product-images/9/3.png",
+            "https://cdn.dummyjson.com/product-images/9/4.jpg",
+            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
       ],
-      "quantity": 1,
-      "user": "89c7"
-    },
-    {
-      "id": "47",
-      "title": "Sneaker shoes",
-      "description": "Synthetic Leather Casual Sneaker shoes for Women/girls Sneakers For Women",
-      "price": 120,
-      "discountPercentage": 10.37,
-      "rating": 4.19,
-      "stock": 50,
-      "brand": "Synthetic Leather",
-      "category": "womens-shoes",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/47/thumbnail.jpeg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/47/1.jpg",
-        "https://cdn.dummyjson.com/product-images/47/2.jpg",
-        "https://cdn.dummyjson.com/product-images/47/3.jpg",
-        "https://cdn.dummyjson.com/product-images/47/thumbnail.jpeg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
-    },
-    {
-      "id": "8",
-      "title": "Microsoft Surface Laptop 4",
-      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-      "price": 1499,
-      "discountPercentage": 10.23,
-      "rating": 4.43,
-      "stock": 68,
-      "brand": "Microsoft Surface",
-      "category": "laptops",
-      "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
-      "images": [
-        "https://cdn.dummyjson.com/product-images/8/1.jpg",
-        "https://cdn.dummyjson.com/product-images/8/2.jpg",
-        "https://cdn.dummyjson.com/product-images/8/3.jpg",
-        "https://cdn.dummyjson.com/product-images/8/4.jpg",
-        "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
-      ],
-      "quantity": 1,
-      "user": "89c7"
+      "totalAmount": 1998,
+      "totalItems": 2,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "addresses": [
+          {
+            "name": "Shashank Kumar Singh",
+            "email": "abhinav.panwar.cs.2019@miet.ac.in",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Abhinav Panwar",
+            "email": "panwarabhinav35@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Thakur",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      }
     }
   ]
 }
