@@ -32,3 +32,12 @@ export function checkUser(loginInfo) {
     //TODO : On server it will only return some info of user
   });
 }
+
+export function signOut(userId) {
+  return new Promise(async (resolve, reject) => {
+    //TODO on server we will remove user session info.
+    resolve({data : 'success'})
+  });
+}
+
+
