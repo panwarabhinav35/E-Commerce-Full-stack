@@ -2426,8 +2426,8 @@
       "email": "abhinav.panwar.cs.2019@miet.ac.in",
       "addresses": [
         {
-          "name": "Shashank Kumar Singh",
-          "email": "abhinav.panwar.cs.2019@miet.ac.in",
+          "name": "Thakur Abhi",
+          "email": "abc23@gmail.com",
           "phoneNumber": "7983013481",
           "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
           "city": "Muzaffarnagar",
@@ -2435,16 +2435,7 @@
           "pinCode": "251314"
         },
         {
-          "name": "Abhinav Panwar",
-          "email": "panwarabhinav35@gmail.com",
-          "phoneNumber": "7983013481",
-          "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
-          "city": "Muzaffarnagar",
-          "state": "Uttar Pradesh",
-          "pinCode": "251314"
-        },
-        {
-          "name": "Thakur",
+          "name": "Aditya ",
           "email": "abc23@gmail.com",
           "phoneNumber": "7983013481",
           "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
@@ -2465,50 +2456,213 @@
   "cart": [],
   "orders": [
     {
-      "id": "1f84",
+      "id": "8268",
       "products": [
         {
-          "id": "5624",
-          "title": "iPhone X",
-          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-          "price": 899,
-          "discountPercentage": 17.94,
-          "rating": 4.44,
-          "stock": 34,
-          "brand": "Apple",
+          "id": "2cb3",
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
           "category": "smartphones",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
           "images": [
-            "https://cdn.dummyjson.com/product-images/2/1.jpg",
-            "https://cdn.dummyjson.com/product-images/2/2.jpg",
-            "https://cdn.dummyjson.com/product-images/2/3.jpg",
-            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+            "https://cdn.dummyjson.com/product-images/3/1.jpg"
           ],
           "quantity": 1,
           "user": "89c7"
         },
         {
-          "id": "74af",
-          "title": "HP Pavilion 15-DK1056WM",
-          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-          "price": 1099,
-          "discountPercentage": 6.18,
-          "rating": 4.43,
-          "stock": 89,
-          "brand": "HP Pavilion",
+          "id": "501b",
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
           "category": "laptops",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
           "images": [
-            "https://cdn.dummyjson.com/product-images/10/1.jpg",
-            "https://cdn.dummyjson.com/product-images/10/2.jpg",
-            "https://cdn.dummyjson.com/product-images/10/3.jpg",
-            "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+            "https://cdn.dummyjson.com/product-images/7/1.jpg",
+            "https://cdn.dummyjson.com/product-images/7/2.jpg",
+            "https://cdn.dummyjson.com/product-images/7/3.jpg",
+            "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
           ],
           "quantity": 1,
           "user": "89c7"
         }
       ],
-      "totalAmount": 1998,
+      "totalAmount": 2748,
+      "totalItems": 2,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "addresses": [
+          {
+            "name": "Shashank Kumar Singh",
+            "email": "abhinav.panwar.cs.2019@miet.ac.in",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Abhinav Panwar",
+            "email": "panwarabhinav35@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Thakur",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "Pending"
+    },
+    {
+      "id": "48f4",
+      "products": [
+        {
+          "id": "c72a",
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/7/1.jpg",
+            "https://cdn.dummyjson.com/product-images/7/2.jpg",
+            "https://cdn.dummyjson.com/product-images/7/3.jpg",
+            "https://cdn.dummyjson.com/product-images/7/thumbnail.jpg"
+          ],
+          "quantity": 3,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 4497,
+      "totalItems": 3,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "addresses": [
+          {
+            "name": "Shashank Kumar Singh",
+            "email": "abhinav.panwar.cs.2019@miet.ac.in",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Abhinav Panwar",
+            "email": "panwarabhinav35@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Thakur",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Abhinav Panwar",
+        "email": "panwarabhinav35@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "Pending"
+    },
+    {
+      "id": "d902",
+      "products": [
+        {
+          "id": "f1e9",
+          "title": "Women Sweaters Wool",
+          "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women' S Crop Top Sweater",
+          "price": 600,
+          "discountPercentage": 17.2,
+          "rating": 4.55,
+          "stock": 55,
+          "brand": "Top Sweater",
+          "category": "tops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/39/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/39/1.jpg",
+            "https://cdn.dummyjson.com/product-images/39/2.jpg",
+            "https://cdn.dummyjson.com/product-images/39/3.jpg",
+            "https://cdn.dummyjson.com/product-images/39/4.jpg",
+            "https://cdn.dummyjson.com/product-images/39/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        },
+        {
+          "id": "a111",
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/9/1.jpg",
+            "https://cdn.dummyjson.com/product-images/9/2.png",
+            "https://cdn.dummyjson.com/product-images/9/3.png",
+            "https://cdn.dummyjson.com/product-images/9/4.jpg",
+            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 1699,
       "totalItems": 2,
       "user": {
         "id": "89c7",
@@ -2557,40 +2711,86 @@
       "status": "Pending"
     },
     {
-      "id": "86c3",
+      "id": "c73d",
       "products": [
         {
-          "id": "c166",
-          "title": "iPhone X",
-          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-          "price": 899,
-          "discountPercentage": 17.94,
-          "rating": 4.44,
-          "stock": 34,
-          "brand": "Apple",
-          "category": "smartphones",
-          "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+          "id": "66b9",
+          "title": "Square Sunglasses",
+          "description": "Fashion Oversized Square Sunglasses Retro Gradient Big Frame Sunglasses For Women One Piece Gafas Shade Mirror Clear Lens 17059",
+          "price": 28,
+          "discountPercentage": 13.89,
+          "rating": 4.64,
+          "stock": 64,
+          "brand": "mastar watch",
+          "category": "sunglasses",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/84/thumbnail.jpg",
           "images": [
-            "https://cdn.dummyjson.com/product-images/2/1.jpg",
-            "https://cdn.dummyjson.com/product-images/2/2.jpg",
-            "https://cdn.dummyjson.com/product-images/2/3.jpg",
-            "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg"
+            "https://cdn.dummyjson.com/product-images/84/1.jpg",
+            "https://cdn.dummyjson.com/product-images/84/2.jpg",
+            "https://cdn.dummyjson.com/product-images/84/thumbnail.jpg"
           ],
-          "quantity": 4,
-          "user": "58df"
+          "quantity": 1,
+          "user": "89c7"
+        },
+        {
+          "id": "7e4f",
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1099,
+          "discountPercentage": 6.18,
+          "rating": 4.43,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/10/1.jpg",
+            "https://cdn.dummyjson.com/product-images/10/2.jpg",
+            "https://cdn.dummyjson.com/product-images/10/3.jpg",
+            "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
         }
       ],
-      "totalAmount": 3596,
-      "totalItems": 4,
+      "totalAmount": 1127,
+      "totalItems": 2,
       "user": {
-        "id": "58df",
-        "email": "panwarabhinav35@gmail.com",
-        "addresses": [],
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
         "password": "Shivamnody@1234"
       },
       "paymentMethod": "cash",
-      "selectedAddress": null,
+      "selectedAddress": {
+        "name": "Aditya ",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
       "status": "Pending"
     }
   ]
-} 
+}

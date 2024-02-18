@@ -19,6 +19,10 @@ import { useEffect } from "react";
 import { fetchItemByUserIDAsync, selectCartItems } from "./features/Cart/cartSlice";
 import PageNotFound from "./pages/404";
 import OrderSuccessPage from "./pages/OrderSuccess";
+import UserOrderPage from "./pages/UserOrderPage";
+import UserProfile from "./features/user/Components/UserProfile";
+import UserProfilePage from "./pages/UserProfilePage";
+import { fetchLoggedinUserAsync } from "./features/user/userSlice";
 
 const router = createBrowserRouter([
   {
@@ -62,17 +66,30 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "*",
-    element: (
-      <PageNotFound></PageNotFound>
-    ),
-  },
-  {
     path: "/order-success/:id",
     element: (
       <OrderSuccessPage></OrderSuccessPage>
     ),
   },
+  {
+    path: "/orders",
+    element: (
+      <UserOrderPage></UserOrderPage>
+    ),
+  },
+  {
+    path: "/profile",
+    element: (
+     <UserProfilePage></UserProfilePage>
+    ),
+  },
+  {
+    path: "*",
+    element: (
+      <PageNotFound></PageNotFound>
+    ),
+  },
+  
 ]);
 
 function App() {
@@ -81,7 +98,9 @@ function App() {
   const user =useSelector(selectLoggedInUser);
   useEffect(()=>{
     if(user){
-    dispatch(fetchItemByUserIDAsync(user.id))}
+    dispatch(fetchItemByUserIDAsync(user.id))
+    dispatch(fetchLoggedinUserAsync(user.id))
+  }
   }, [dispatch,user,items])
   return (
     <div className="App">

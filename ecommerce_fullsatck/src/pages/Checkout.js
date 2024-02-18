@@ -7,8 +7,9 @@ import {
   updateCartAsync,
 } from "../features/Cart/cartSlice";
 import { useForm } from "react-hook-form";
-import { selectLoggedInUser, updateUserAsync } from "../features/auth/authSlice";
+import {updateUserAsync } from "../features/auth/authSlice";
 import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
+import { selectUserInfo } from "../features/user/userSlice";
 
 
 
@@ -55,7 +56,7 @@ const Checkout = () => {
     // todo clear cart after order
     // to do on server cahnge the stock nuber of items 
   }
-  const user = useSelector(selectLoggedInUser)
+  const user = useSelector(selectUserInfo)
   const currentOrder =useSelector(selectCurrentOrder)
 
   return (
@@ -374,7 +375,7 @@ const Checkout = () => {
                                     handleQuantity(e, product);
                                   }}
                                 >
-                                  <option value="1">1</option>
+                                  <option value={product.quantity}>{product.quantity}</option>
                                   <option value="2">2</option>
                                   <option value="3">3</option>
                                   <option value="4">4</option>
