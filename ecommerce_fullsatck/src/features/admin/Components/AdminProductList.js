@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
+  increment,
+  fetchAllProductAsync,
   selectAllProducts,
   fetchAllProductByFilterAsync,
   total_Items,
@@ -8,7 +10,7 @@ import {
   selectBrands,
   fetchCategoriesAsync,
   fetchBrandsAsync,
-} from "../productSlice";
+} from "../../product-list/productSlice";
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
@@ -72,7 +74,7 @@ const oldProducts = [
   },
 ];
 
-export default function ProductList() {
+export default function AdminProductList() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
   const dispatch = useDispatch();
   const [filter, setFilter] = useState({});
@@ -152,7 +154,7 @@ export default function ProductList() {
             <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900">
-                  All Products
+                  All Products Admin
                 </h1>
 
                 <div className="flex items-center">
@@ -235,6 +237,9 @@ export default function ProductList() {
                   ></DesktopFilter>
                   {/* Product grid */}
                   <div className="lg:col-span-3">
+                    <button className="rounded-md mx-8 bg-green-600 px-3 py-2 my-2 text-sm font-semibold text-white hover:bg-green-500">
+                      Add New Product
+                    </button>
                     {/* This is our Product */}
                     <ProductGrid products={products}></ProductGrid>
                   </div>
@@ -525,48 +530,56 @@ const ProductGrid = ({ products }) => {
         <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">
           <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
             {products.map((product) => (
-              <Link to={`/product-detail/${product.id}`}>
-                <div
-                  key={product.id}
-                  className="group relative border-solid border-2 p-2 border-gray-200"
-                >
-                  <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
-                    <img
-                      src={product.thumbnail}
-                      alt={product.title}
-                      className="h-full w-full object-cover object-center lg:h-full lg:w-full"
-                    />
-                  </div>
-                  <div className="mt-4 flex justify-between">
-                    <div>
-                      <h3 className="text-sm text-gray-700">
-                        <div href={product.thumbnail}>
-                          <span
-                            aria-hidden="true"
-                            className="absolute inset-0"
-                          />
-                          {product.title}
-                        </div>
-                      </h3>
-                      <p className="mt-1 text-sm text-gray-500">
-                        <StarIcon className="w-6 h-6 inline"></StarIcon>
-                        <span className="align-bottom">{product.rating}</span>
-                      </p>
+              <div>
+                <Link to={`/admin/product-detail/${product.id}`}>
+                  <div
+                    key={product.id}
+                    className="group relative border-solid border-2 p-2 border-gray-200"
+                  >
+                    <div className="min-h-60 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
+                      <img
+                        src={product.thumbnail}
+                        alt={product.title}
+                        className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                      />
                     </div>
-                    <div>
-                      <p className="text-sm font-medium text-gray-900">
-                        $
-                        {Math.round(
-                          product.price * (1 - product.discountPercentage / 100)
-                        )}
-                      </p>
-                      <p className="text-sm line-through font-medium text-gray-900">
-                        <span className="text-gray-400">${product.price}</span>
-                      </p>
+                    <div className="mt-4 flex justify-between">
+                      <div>
+                        <h3 className="text-sm text-gray-700">
+                          <div href={product.thumbnail}>
+                            <span
+                              aria-hidden="true"
+                              className="absolute inset-0"
+                            />
+                            {product.title}
+                          </div>
+                        </h3>
+                        <p className="mt-1 text-sm text-gray-500">
+                          <StarIcon className="w-6 h-6 inline"></StarIcon>
+                          <span className="align-bottom">{product.rating}</span>
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-sm font-medium text-gray-900">
+                          $
+                          {Math.round(
+                            product.price *
+                              (1 - product.discountPercentage / 100)
+                          )}
+                        </p>
+                        <p className="text-sm line-through font-medium text-gray-900">
+                          <span className="text-gray-400">
+                            ${product.price}
+                          </span>
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+                <button className="rounded-md bg-indigo-600 px-3 py-2 my-2 text-sm font-semibold text-white w-full hover:bg-indigo-500">
+                  Edit Product
+                </button>
+              </div>
             ))}
           </div>
         </div>

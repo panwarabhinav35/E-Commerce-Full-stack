@@ -37,7 +37,7 @@ export default function Signup() {
             <form
               className="space-y-6"
               onSubmit={handleSubmit((data) => {
-                dispatch(createUserAsync({email:data.email , password: data.password , addresses:[]}))
+                dispatch(createUserAsync({email:data.email , password: data.password , addresses:[], role :"user"}))
               })}
             >
               <div>

@@ -22,7 +22,7 @@ export const fetchLoggedinUserAsync = createAsyncThunk(
     const response = await fetchLoggedinUser(id);
     // The value we return becomes the `fulfilled` action payload
     return response.data;
-    console.log(response.data)
+    
   }
 );
 export const updateUserAsync = createAsyncThunk(

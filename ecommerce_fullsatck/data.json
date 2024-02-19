@@ -2413,17 +2413,20 @@
       "id": "a833",
       "email": "abc@gmail.com",
       "addresses": [],
+      "role": "user",
       "password": "Vkone@1eight"
     },
     {
       "id": "d23b",
       "email": "abc23@gmail.com",
       "addresses": [],
+      "role": "user",
       "password": "Abhi@1234"
     },
     {
       "id": "89c7",
       "email": "abhinav.panwar.cs.2019@miet.ac.in",
+      "role": "user",
       "addresses": [
         {
           "name": "Thakur Abhi",
@@ -2450,7 +2453,15 @@
       "id": "58df",
       "email": "panwarabhinav35@gmail.com",
       "addresses": [],
+      "role": "user",
       "password": "Shivamnody@1234"
+    },
+    {
+      "id": "8e38",
+      "email": "admin@gmail.com",
+      "password": "Admin@123",
+      "addresses": [],
+      "role": "admin"
     }
   ],
   "cart": [],
