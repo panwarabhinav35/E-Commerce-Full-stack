@@ -20,7 +20,6 @@ import { fetchItemByUserIDAsync, selectCartItems } from "./features/Cart/cartSli
 import PageNotFound from "./pages/404";
 import OrderSuccessPage from "./pages/OrderSuccess";
 import UserOrderPage from "./pages/UserOrderPage";
-import UserProfile from "./features/user/Components/UserProfile";
 import UserProfilePage from "./pages/UserProfilePage";
 import { fetchLoggedinUserAsync } from "./features/user/userSlice";
 import Logout from "./features/auth/Components/Logout";
@@ -28,6 +27,7 @@ import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import ProtectedAdmin from "./features/auth/Components/Protected Admin";
 import AdminHome from "./pages/AdminHome";
 import AdminProductDetailPage from "./pages/AdminProductDetailPage";
+import AdminProductFormPage from "./pages/AdminProductFormPage";
 
 const router = createBrowserRouter([
   {
@@ -83,6 +83,14 @@ const router = createBrowserRouter([
     element: (
       <ProtectedAdmin>
         <AdminProductDetailPage></AdminProductDetailPage>
+      </ProtectedAdmin>
+    ),
+  },
+  {
+    path: "/admin/product-form",
+    element: (
+      <ProtectedAdmin>
+        <AdminProductFormPage></AdminProductFormPage>>
       </ProtectedAdmin>
     ),
   },

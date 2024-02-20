@@ -237,9 +237,9 @@ export default function AdminProductList() {
                   ></DesktopFilter>
                   {/* Product grid */}
                   <div className="lg:col-span-3">
-                    <button className="rounded-md mx-8 bg-green-600 px-3 py-2 my-2 text-sm font-semibold text-white hover:bg-green-500">
+                    <Link to='/admin/product-form' className="rounded-md mx-8 bg-green-600 px-3 py-2 my-2 text-sm font-semibold text-white hover:bg-green-500">
                       Add New Product
-                    </button>
+                    </Link>
                     {/* This is our Product */}
                     <ProductGrid products={products}></ProductGrid>
                   </div>
