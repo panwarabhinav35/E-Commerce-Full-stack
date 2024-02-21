@@ -81,6 +81,7 @@ export default function ProductList() {
 
   useEffect(() => {
     const pagination = { _page: page };
+    //todo Server will filter deleted products
     dispatch(fetchAllProductByFilterAsync({ filter, sort, pagination }));
   }, [dispatch, filter, sort, page]);
 
@@ -565,6 +566,9 @@ const ProductGrid = ({ products }) => {
                       </p>
                     </div>
                   </div>
+                  {product.deleted && (
+                    <p className="text-sm text-red-600 ">Out of Stock</p>
+                  )}
                 </div>
               </Link>
             ))}
