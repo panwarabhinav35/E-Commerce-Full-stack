@@ -2590,7 +2590,7 @@
         "state": "Uttar Pradesh",
         "pinCode": "251314"
       },
-      "status": "Pending"
+      "status": "pending"
     },
     {
       "id": "48f4",
@@ -2662,7 +2662,7 @@
         "state": "Uttar Pradesh",
         "pinCode": "251314"
       },
-      "status": "Pending"
+      "status": "pending"
     },
     {
       "id": "d902",
@@ -2756,7 +2756,7 @@
         "state": "Uttar Pradesh",
         "pinCode": "251314"
       },
-      "status": "Pending"
+      "status": "pending"
     },
     {
       "id": "c73d",
@@ -2838,7 +2838,7 @@
         "state": "Uttar Pradesh",
         "pinCode": "251314"
       },
-      "status": "Pending"
+      "status": "pending"
     }
   ]
 }
