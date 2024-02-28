@@ -7,7 +7,7 @@
       "price": 500,
       "discountPercentage": 12.96,
       "rating": 0,
-      "stock": 94,
+      "stock": 0,
       "brand": "Apple",
       "category": "smartphones",
       "thumbnail": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
@@ -2839,6 +2839,582 @@
         "pinCode": "251314"
       },
       "status": "pending"
+    },
+    {
+      "id": "30af",
+      "products": [
+        {
+          "id": "648e",
+          "title": "Women Shoulder Bags",
+          "description": "LouisWill Women Shoulder Bags Long Clutches Cross Body Bags Phone Bags PU Leather Hand Bags Large Capacity Card Holders Zipper Coin Purses Fashion Crossbody Bags for Girls Ladies",
+          "price": 46,
+          "discountPercentage": 14.65,
+          "rating": 4.71,
+          "stock": 17,
+          "brand": "LouisWill",
+          "category": "womens-bags",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/71/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/71/1.jpg",
+            "https://cdn.dummyjson.com/product-images/71/2.jpg",
+            "https://cdn.dummyjson.com/product-images/71/3.webp",
+            "https://cdn.dummyjson.com/product-images/71/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        },
+        {
+          "id": "b8b7",
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/9/1.jpg",
+            "https://cdn.dummyjson.com/product-images/9/2.png",
+            "https://cdn.dummyjson.com/product-images/9/3.png",
+            "https://cdn.dummyjson.com/product-images/9/4.jpg",
+            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 1145,
+      "totalItems": 2,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Thakur Abhi",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "pending"
+    },
+    {
+      "id": "4cbb",
+      "products": [
+        {
+          "id": "390b",
+          "title": "Huawei P30",
+          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+          "price": 1000,
+          "discountPercentage": 10.58,
+          "rating": 4.09,
+          "stock": 32,
+          "brand": "Huawei",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/5/1.jpg",
+            "https://cdn.dummyjson.com/product-images/5/2.jpg",
+            "https://cdn.dummyjson.com/product-images/5/3.jpg",
+            "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 1000,
+      "totalItems": 1,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Aditya ",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "delivered"
+    },
+    {
+      "id": "36f8",
+      "products": [
+        {
+          "id": "a403",
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/4/1.jpg",
+            "https://cdn.dummyjson.com/product-images/4/2.jpg",
+            "https://cdn.dummyjson.com/product-images/4/3.jpg",
+            "https://cdn.dummyjson.com/product-images/4/4.jpg",
+            "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur Abhi",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "dispatched"
+    },
+    {
+      "id": "3d87",
+      "products": [
+        {
+          "id": "ad63",
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/8/1.jpg",
+            "https://cdn.dummyjson.com/product-images/8/2.jpg",
+            "https://cdn.dummyjson.com/product-images/8/3.jpg",
+            "https://cdn.dummyjson.com/product-images/8/4.jpg",
+            "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 1499,
+      "totalItems": 1,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Aditya ",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "delivered"
+    },
+    {
+      "id": "bef6",
+      "products": [
+        {
+          "id": "25ac",
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/4/1.jpg",
+            "https://cdn.dummyjson.com/product-images/4/2.jpg",
+            "https://cdn.dummyjson.com/product-images/4/3.jpg",
+            "https://cdn.dummyjson.com/product-images/4/4.jpg",
+            "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 280,
+      "totalItems": 1,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur Abhi",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "delivered"
+    },
+    {
+      "id": "cecb",
+      "products": [
+        {
+          "id": "c564",
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/9/1.jpg",
+            "https://cdn.dummyjson.com/product-images/9/2.png",
+            "https://cdn.dummyjson.com/product-images/9/3.png",
+            "https://cdn.dummyjson.com/product-images/9/4.jpg",
+            "https://cdn.dummyjson.com/product-images/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 1099,
+      "totalItems": 1,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur Abhi",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "delivered"
+    },
+    {
+      "id": "daa0",
+      "products": [
+        {
+          "id": "bf71",
+          "title": "HP Pavilion 15-DK1056WM",
+          "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+          "price": 1000,
+          "discountPercentage": 6.18,
+          "rating": 0,
+          "stock": 89,
+          "brand": "HP Pavilion",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/10/1.jpg",
+            "https://cdn.dummyjson.com/product-images/10/2.jpg",
+            "https://cdn.dummyjson.com/product-images/10/3.jpg",
+            "https://cdn.dummyjson.com/product-images/10/thumbnail.jpeg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 1000,
+      "totalItems": 1,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur Abhi",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "cancelled"
+    },
+    {
+      "id": "cb3a",
+      "products": [
+        {
+          "id": "9914",
+          "title": "Microsoft Surface Laptop 4",
+          "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+          "price": 1499,
+          "discountPercentage": 10.23,
+          "rating": 4.43,
+          "stock": 68,
+          "brand": "Microsoft Surface",
+          "category": "laptops",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/8/1.jpg",
+            "https://cdn.dummyjson.com/product-images/8/2.jpg",
+            "https://cdn.dummyjson.com/product-images/8/3.jpg",
+            "https://cdn.dummyjson.com/product-images/8/4.jpg",
+            "https://cdn.dummyjson.com/product-images/8/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        },
+        {
+          "id": "abd5",
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/4/1.jpg",
+            "https://cdn.dummyjson.com/product-images/4/2.jpg",
+            "https://cdn.dummyjson.com/product-images/4/3.jpg",
+            "https://cdn.dummyjson.com/product-images/4/4.jpg",
+            "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        },
+        {
+          "id": "8891",
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+          "images": [
+            "https://cdn.dummyjson.com/product-images/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": "89c7"
+        }
+      ],
+      "totalAmount": 3028,
+      "totalItems": 3,
+      "user": {
+        "id": "89c7",
+        "email": "abhinav.panwar.cs.2019@miet.ac.in",
+        "role": "user",
+        "addresses": [
+          {
+            "name": "Thakur Abhi",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          },
+          {
+            "name": "Aditya ",
+            "email": "abc23@gmail.com",
+            "phoneNumber": "7983013481",
+            "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+            "city": "Muzaffarnagar",
+            "state": "Uttar Pradesh",
+            "pinCode": "251314"
+          }
+        ],
+        "password": "Shivamnody@1234"
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Thakur Abhi",
+        "email": "abc23@gmail.com",
+        "phoneNumber": "7983013481",
+        "street": "Vill-Chindaura, post-Jansath, distt-Muzaffarnagar",
+        "city": "Muzaffarnagar",
+        "state": "Uttar Pradesh",
+        "pinCode": "251314"
+      },
+      "status": "dispatched"
     }
   ]
 }

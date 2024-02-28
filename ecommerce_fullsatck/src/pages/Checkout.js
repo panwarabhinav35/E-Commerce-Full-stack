@@ -50,7 +50,7 @@ const Checkout = () => {
   }
 
   const handleOrder=(e)=>{
-    const order ={products, totalAmount, totalItems, user ,paymentMethod , selectedAddress, status:'Pending'}
+    const order ={products, totalAmount, totalItems, user ,paymentMethod , selectedAddress, status:'pending'}
     dispatch(createOrderAsync(order))
     //todo redirect to order success page
     // todo clear cart after order

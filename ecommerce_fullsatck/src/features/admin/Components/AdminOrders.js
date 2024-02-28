@@ -3,10 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   fetchAllOrdersAsync,
   selectadminOrder,
+  selecttotalOrder,
   updateOrderAsync,
 } from "../../order/orderSlice";
 import { XMarkIcon, EyeIcon, PencilIcon } from "@heroicons/react/24/outline";
 import { discountedPrice } from "../../../app/Constants";
+import Pagination from "../../Common/Pagination";
 
 const AdminOrders = () => {
   const dispatch = useDispatch();
@@ -19,6 +21,7 @@ const AdminOrders = () => {
     dispatch(fetchAllOrdersAsync(pagination));
   }, [dispatch, page]);
   const orders = useSelector(selectadminOrder);
+  const total_Orders = useSelector(selecttotalOrder)
 
   const handleEdit = (order) => {
     setEditableOrderId(order.id);
@@ -29,8 +32,24 @@ const AdminOrders = () => {
   const handleUpdate = (e, order) => {
     // console.log(e.target.value)
     dispatch(updateOrderAsync({ ...order, status: e.target.value }));
-    setEditableOrderId(-1)
+    setEditableOrderId(-1);
   };
+
+  const chooseColor = (status) => {
+    switch (status) {
+      case "pending":
+        return "bg-purple-200 text-purple-600";
+      case "delivered":
+        return "bg-green-200 text-green-600";
+      case "dispatched":
+        return "bg-yellow-200 text-yellow-600";
+      case "cancelled":
+        return "bg-red-200 text-red-600";
+    }
+  };
+  const handelPage = (e,page)=>{
+    setPage(page)
+  }
 
   return (
     <div>
@@ -98,7 +117,11 @@ const AdminOrders = () => {
                             <option value="cancelled"> Cancelled</option>
                           </select>
                         ) : (
-                          <span className="bg-purple-200 text-purple-600 py-1 px-3 rounded-full text-xs">
+                          <span
+                            className={`${chooseColor(
+                              order.status
+                            )} py-1 px-3 rounded-full text-xs`}
+                          >
                             {order.status}
                           </span>
                         )}
@@ -126,6 +149,12 @@ const AdminOrders = () => {
             </div>
           </div>
         </div>
+        <Pagination
+          page={page}
+          setPage={setPage}
+          handelPage={handelPage}
+          total_Items={total_Orders}
+        ></Pagination>
       </div>
     </div>
   );
