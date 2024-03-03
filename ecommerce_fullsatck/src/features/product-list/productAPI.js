@@ -16,7 +16,7 @@ export function fetchProductById(id) {
   });
 }
 
-export function fetchAllProductByFilter(filter, sort, pagination) {
+export function fetchAllProductByFilter(filter, sort, pagination, admin) {
   //todo Server will filter deleted products
   let queryString = "";
   for (let key in filter) {
@@ -35,6 +35,9 @@ export function fetchAllProductByFilter(filter, sort, pagination) {
       continue;
     }
     queryString += `${key}=${sort[key]}&`;
+  }
+  if(admin){
+    queryString+= `isAdmin=true`
   }
   console.log(queryString);
   return new Promise(async (resolve) => {

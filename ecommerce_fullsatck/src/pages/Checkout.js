@@ -10,6 +10,7 @@ import { useForm } from "react-hook-form";
 import {updateUserAsync } from "../features/auth/authSlice";
 import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
 import { selectUserInfo } from "../features/user/userSlice";
+import { discountedPrice } from "../app/Constants";
 
 
 
@@ -26,7 +27,7 @@ const Checkout = () => {
   const products = useSelector(selectUserCartItems);
 
   const totalAmount = products.reduce(
-    (amount, item) => item.price * item.quantity + amount,
+    (amount, item) =>  discountedPrice(item.product)* item.quantity + amount,
     0
   );
   const totalItems = products.reduce((total, item) => item.quantity + total, 0);
@@ -35,7 +36,7 @@ const Checkout = () => {
   const [paymentMethod,setPaymentMethod]=useState("cash")
 
   const handleQuantity = (e, product) => {
-    dispatch(updateCartAsync({ ...product, quantity: +e.target.value }));
+    dispatch(updateCartAsync({ id:product.id, quantity: +e.target.value }));
   };
 
   const handleRemove = (e, product) => {
@@ -50,7 +51,7 @@ const Checkout = () => {
   }
 
   const handleOrder=(e)=>{
-    const order ={products, totalAmount, totalItems, user ,paymentMethod , selectedAddress, status:'pending'}
+    const order ={products, totalAmount, totalItems, user:user.id ,paymentMethod , selectedAddress, status:'pending'}
     dispatch(createOrderAsync(order))
     //todo redirect to order success page
     // todo clear cart after order
@@ -70,8 +71,8 @@ const Checkout = () => {
               className="bg-white px-5 mt-12"
               noValidate
               onSubmit={handleSubmit((data) => {
-                // console.log(data);
-                dispatch(updateUserAsync({...user, addresses:[...user.addresses,data]}))
+                const newItem = {...user, addresses:[...user.addresses,data]}
+                dispatch(updateUserAsync(newItem))
                 reset();
               })}
             >
@@ -344,8 +345,8 @@ const Checkout = () => {
                         <li key={product.id} className="flex py-6">
                           <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                             <img
-                              src={product.thumbnail}
-                              alt={product.description}
+                              src={product.product.thumbnail}
+                              alt={product.product.description}
                               className="h-full w-full object-cover object-center"
                             />
                           </div>
@@ -354,12 +355,12 @@ const Checkout = () => {
                             <div>
                               <div className="flex justify-between text-base font-medium text-gray-900">
                                 <h3>
-                                  <a href={product.href}>{product.title}</a>
+                                  <a href={product.href}>{product.product.title}</a>
                                 </h3>
-                                <p className="ml-4">${product.price}</p>
+                                <p className="ml-4">${discountedPrice(product.product)}</p>
                               </div>
                               <p className="mt-1 text-sm text-gray-500">
-                                {product.brand}
+                                {product.product.brand}
                               </p>
                             </div>
                             <div className="flex flex-1 items-end justify-between text-sm">

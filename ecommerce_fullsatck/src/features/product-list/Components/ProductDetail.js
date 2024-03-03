@@ -6,6 +6,7 @@ import { fetchProductByIdAsync, selectedProduct } from "../productSlice";
 import { useParams } from "react-router-dom";
 import { addToCartAsync, selectUserCartItems } from "../../Cart/cartSlice";
 import { selectLoggedInUser } from "../../auth/authSlice";
+import { discountedPrice } from "../../../app/Constants";
 
 const colors = [
   { name: "White", class: "bg-white", selectedClass: "ring-gray-400" },
@@ -51,10 +52,9 @@ export default function ProductDetail({ id }) {
 
   const handleCart = (e) => {
     e.preventDefault();
-    const newItem = { ...product, quantity: 1, user: user.id };
-    delete newItem["id"];
     let index = -1;
-    index = cartIetms.findIndex((e) => e.title === newItem.title);
+    index = cartIetms.findIndex((e) => e.product.id === product.id);
+    const newItem = { product: product.id , quantity:1 , user: user.id};
     if (index == -1) {
       dispatch(addToCartAsync(newItem));
     }
@@ -155,7 +155,7 @@ export default function ProductDetail({ id }) {
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Product information</h2>
               <p className="text-3xl tracking-tight text-gray-900">
-                ${product.price}
+                ${discountedPrice(product)}
               </p>
 
               {/* Reviews */}

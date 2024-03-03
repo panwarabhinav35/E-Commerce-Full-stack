@@ -52,12 +52,12 @@ const AdminOrders = () => {
   }
 
   return (
-    <div>
+    <div className="w-auto">
       <div className="overflow-x-auto">
         <div className="bg-gray-100 flex items-center justify-center font-sans overflow-hidden">
-          <div className="w-full">
+          <div className="p-15">
             <div className="bg-white shadow-md rounded my-6">
-              <table className="min-w-max w-full table-auto">
+              <table className=" w-full table-auto">
                 <thead>
                   <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
                     <th className="py-3 px-6 text-left">Order#</th>
@@ -83,12 +83,12 @@ const AdminOrders = () => {
                             <div className="mr-2">
                               <img
                                 className="w-6 h-6 rounded-full"
-                                src={item.thumbnail}
+                                src={item.product.thumbnail}
                               />
                             </div>
                             <span>
-                              {item.title} - #{item.quantity} - $
-                              {discountedPrice(item)}
+                              {item.product.title} - #{item.quantity} - $
+                              {discountedPrice(item.product)}
                             </span>
                           </div>
                         ))}
@@ -98,7 +98,7 @@ const AdminOrders = () => {
                           ${order.totalAmount}
                         </div>
                       </td>
-                      <td className=" flex flex-wrap py-3 px-6 text-center">
+                      <td className="justify-normal text-center py-3 px-6">
                         <div>
                           <div>
                             <strong>{order.selectedAddress.name}</strong>

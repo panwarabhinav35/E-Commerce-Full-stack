@@ -84,7 +84,7 @@ export default function AdminProductList() {
 
   useEffect(() => {
     const pagination = { _page: page };
-    dispatch(fetchAllProductByFilterAsync({ filter, sort, pagination }));
+    dispatch(fetchAllProductByFilterAsync({ filter, sort, pagination, admin:true }));
   }, [dispatch, filter, sort, page]);
 
   useEffect(() => {

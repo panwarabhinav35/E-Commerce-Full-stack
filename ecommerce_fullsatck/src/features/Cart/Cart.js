@@ -7,6 +7,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Navigate } from "react-router-dom";
 import { selectLoggedInUser } from "../auth/authSlice";
+import { discountedPrice } from "../../app/Constants";
 
 export default function Cart() {
   // const count = useSelector(selectCount);
@@ -14,11 +15,11 @@ export default function Cart() {
   const [open, setOpen] = useState(true);
   const products = useSelector(selectUserCartItems)
 
-  const totalAmount = products.reduce((amount, item)=> item.price * item.quantity +amount,0)
+  const totalAmount = products.reduce((amount, item)=> discountedPrice(item.product) * item.quantity +amount,0)
   const totalItems = products.reduce((total, item)=>item.quantity +total,0)
 
   const handleQuantity =(e,product)=>{
-    dispatch(updateCartAsync({...product, quantity: +e.target.value}))
+    dispatch(updateCartAsync({id:product.id, quantity: +e.target.value}))
   }
 
   const handleRemove =(e,product)=>{
@@ -40,8 +41,8 @@ export default function Cart() {
                 <li key={product.id} className="flex py-6">
                   <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                     <img
-                      src={product.thumbnail}
-                      alt={product.description}
+                      src={product.product.thumbnail}
+                      alt={product.product.description}
                       className="h-full w-full object-cover object-center"
                     />
                   </div>
@@ -50,12 +51,12 @@ export default function Cart() {
                     <div>
                       <div className="flex justify-between text-base font-medium text-gray-900">
                         <h3>
-                          <a href={product.href}>{product.title}</a>
+                          <a href={product.href}>{product.product.title}</a>
                         </h3>
-                        <p className="ml-4">${product.price}</p>
+                        <p className="ml-4">${discountedPrice(product.product)}</p>
                       </div>
                       <p className="mt-1 text-sm text-gray-500">
-                        {product.brand}
+                        {product.product.brand}
                       </p>
                     </div>
                     <div className="flex flex-1 items-end justify-between text-sm">
@@ -66,8 +67,8 @@ export default function Cart() {
                         >
                           Qty
                         </label>
-                        <select onChange={(e) => {handleQuantity(e,product)}}>
-                          <option value={product.quantity}>{product.quantity}</option>
+                        <select onChange={(e) => {handleQuantity(e,product)}} value={product.quantity}>
+                          <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
                           <option value="4">4</option>
