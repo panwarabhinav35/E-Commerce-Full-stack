@@ -78,11 +78,13 @@ const ProductForm = () => {
           const updateProduct ={id:id,...newProduct}
           updateProduct.rating = product.rating
           dispatch(updateProductAsync(updateProduct))
+          alert("Product Updated")
           reset()
         }
         else{
           newProduct.rating =0
           dispatch(createProductAsync(newProduct))
+          alert("Product Created")
           reset()
         }
         

@@ -57,6 +57,7 @@ export default function ProductDetail({ id }) {
     const newItem = { product: product.id , quantity:1 , user: user.id};
     if (index == -1) {
       dispatch(addToCartAsync(newItem));
+      alert("Items added to cart")
     }
     else{
       alert("Already added")
