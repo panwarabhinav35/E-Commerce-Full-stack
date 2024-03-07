@@ -7,9 +7,9 @@ import {
   updateCartAsync,
 } from "../features/Cart/cartSlice";
 import { useForm } from "react-hook-form";
-import {updateUserAsync } from "../features/auth/authSlice";
+// import {updateUserAsync } from "../features/auth/authSlice";
 import { createOrderAsync, selectCurrentOrder } from "../features/order/orderSlice";
-import { selectUserInfo } from "../features/user/userSlice";
+import { selectUserInfo, updateUserAsync } from "../features/user/userSlice";
 import { discountedPrice } from "../app/Constants";
 
 

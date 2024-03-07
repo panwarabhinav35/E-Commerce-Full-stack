@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectUserCartItems } from "../Cart/cartSlice";
 import { selectLoggedInUser } from "../auth/authSlice";
+import { selectUserInfo } from "../user/userSlice";
 
 const user = {
   name: "Tom Cook",
@@ -34,18 +35,11 @@ function classNames(...classes) {
 
 const Navbar = ({ children }) => {
   const item = useSelector(selectUserCartItems)
-  const user =useSelector(selectLoggedInUser)
+  const user =useSelector(selectUserInfo)
+  console.log(user)
   return (
     <div>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
-      <div className="min-h-full">
+      {user && <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
             <>
@@ -245,7 +239,7 @@ const Navbar = ({ children }) => {
             {children}
           </div>
         </main>
-      </div>
+      </div>}
     </div>
   );
 };

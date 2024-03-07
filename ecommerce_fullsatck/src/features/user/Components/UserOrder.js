@@ -8,13 +8,13 @@ const UserOrder = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectUserInfo);
   useEffect(() => {
-    dispatch(fetchLoggedinUserOrdersAsync(user.id));
+    dispatch(fetchLoggedinUserOrdersAsync());
   }, [dispatch]);
 
   const orders = useSelector(selectUserOrders);
   return (
     <div>
-      {orders.map((order) => (
+      {orders && orders.map((order) => (
         
         <div>
 

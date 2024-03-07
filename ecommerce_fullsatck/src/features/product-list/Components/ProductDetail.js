@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchProductByIdAsync, selectedProduct } from "../productSlice";
 import { useParams } from "react-router-dom";
 import { addToCartAsync, selectUserCartItems } from "../../Cart/cartSlice";
-import { selectLoggedInUser } from "../../auth/authSlice";
 import { discountedPrice } from "../../../app/Constants";
 
 const colors = [
@@ -39,7 +38,6 @@ function classNames(...classes) {
 export default function ProductDetail({ id }) {
   const [selectedColor, setSelectedColor] = useState(colors[0]);
   const [selectedSize, setSelectedSize] = useState(sizes[2]);
-  const user = useSelector(selectLoggedInUser);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -54,7 +52,7 @@ export default function ProductDetail({ id }) {
     e.preventDefault();
     let index = -1;
     index = cartIetms.findIndex((e) => e.product.id === product.id);
-    const newItem = { product: product.id , quantity:1 , user: user.id};
+    const newItem = { product: product.id , quantity:1};
     if (index == -1) {
       dispatch(addToCartAsync(newItem));
       alert("Items added to cart")

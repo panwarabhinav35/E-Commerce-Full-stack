@@ -156,8 +156,8 @@ function App() {
   const user =useSelector(selectLoggedInUser);
   useEffect(()=>{
     if(user){
-    dispatch(fetchItemByUserIDAsync(user.id))
-    dispatch(fetchLoggedinUserAsync(user.id))
+    dispatch(fetchItemByUserIDAsync())
+    dispatch(fetchLoggedinUserAsync())
   }
   }, [dispatch,user,items])
   return (

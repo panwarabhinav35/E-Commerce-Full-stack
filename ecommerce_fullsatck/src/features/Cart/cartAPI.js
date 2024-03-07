@@ -40,21 +40,21 @@ export function deleteItemFromCart(itemId) {
     //TODO : On server it will only return some info of user
   );
 }
-export function resretCart(userID) {
+export function resretCart() {
   return new Promise(async (resolve) => {
-    const response = await fetchItemByUserID(userID);
+    const response = await fetchItemByUserID();
     const items = response.data;
     for (let item of items) {
-      console.log(item)
+      // console.log(item)
       await deleteItemFromCart(item.id);
     }
     resolve({data : {status : "Success"}})
   });
 }
 
-export function fetchItemByUserID(id) {
+export function fetchItemByUserID() {
   return new Promise(async (resolve) => {
-    const response = await fetch("http://localhost:8080/carts?user=" + id);
+    const response = await fetch("http://localhost:8080/carts");
     const data = await response.json();
     resolve({ data });
   });
