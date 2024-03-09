@@ -14,9 +14,16 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import { selectLoggedInUser } from "./features/auth/authSlice";
+import {
+  checkAuthAsync,
+  selectLoggedInUser,
+  selectUserChecked,
+} from "./features/auth/authSlice";
 import { useEffect } from "react";
-import { fetchItemByUserIDAsync, selectCartItems } from "./features/Cart/cartSlice";
+import {
+  fetchItemByUserIDAsync,
+  selectCartItems,
+} from "./features/Cart/cartSlice";
 import PageNotFound from "./pages/404";
 import OrderSuccessPage from "./pages/OrderSuccess";
 import UserOrderPage from "./pages/UserOrderPage";
@@ -29,6 +36,7 @@ import AdminHome from "./pages/AdminHome";
 import AdminProductDetailPage from "./pages/AdminProductDetailPage";
 import AdminProductFormPage from "./pages/AdminProductFormPage";
 import AdminOrdersPage from "./pages/AdminOrdersPage";
+import StripeCheckout from "./pages/StripeCheckout";
 
 const router = createBrowserRouter([
   {
@@ -113,56 +121,57 @@ const router = createBrowserRouter([
   },
   {
     path: "/order-success/:id",
-    element: (
-      <OrderSuccessPage></OrderSuccessPage>
-    ),
+    element: <OrderSuccessPage></OrderSuccessPage>,
   },
   {
     path: "/orders",
-    element: (
-      <UserOrderPage></UserOrderPage>
-    ),
+    element: <UserOrderPage></UserOrderPage>,
   },
   {
     path: "/profile",
-    element: (
-     <UserProfilePage></UserProfilePage>
-    ),
+    element: <UserProfilePage></UserProfilePage>,
   },
   {
     path: "/logout",
-    element: (
-     <Logout></Logout>
-    ),
+    element: <Logout></Logout>,
   },
   {
     path: "/forgotpassword",
+    element: <ForgotPasswordPage></ForgotPasswordPage>,
+  },
+  {
+    path: "/stripe-checkout",
     element: (
-     <ForgotPasswordPage></ForgotPasswordPage>
+      <Protected>
+        <StripeCheckout></StripeCheckout>
+      </Protected>
     ),
   },
   {
     path: "*",
-    element: (
-      <PageNotFound></PageNotFound>
-    ),
+    element: <PageNotFound></PageNotFound>,
   },
-  
 ]);
 
 function App() {
-  const dispatch = useDispatch()
-  const items =useSelector(selectCartItems)
-  const user =useSelector(selectLoggedInUser);
-  useEffect(()=>{
-    if(user){
-    dispatch(fetchItemByUserIDAsync())
-    dispatch(fetchLoggedinUserAsync())
-  }
-  }, [dispatch,user,items])
+  const dispatch = useDispatch();
+  const items = useSelector(selectCartItems);
+  const user = useSelector(selectLoggedInUser);
+  const userChecked = useSelector(selectUserChecked);
+
+  useEffect(() => {
+    dispatch(checkAuthAsync());
+  }, [dispatch]);
+
+  useEffect(() => {
+    if (user) {
+      dispatch(fetchItemByUserIDAsync());
+      dispatch(fetchLoggedinUserAsync());
+    }
+  }, [dispatch, user, items]);
   return (
     <div className="App">
-      <RouterProvider router={router} />
+      {userChecked && <RouterProvider router={router} />}
       {/* Link must be inside the provider */}
     </div>
   );

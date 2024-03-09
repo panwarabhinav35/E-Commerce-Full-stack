@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { deleteItemFromCartAsync, fetchItemByUserIDAsync, increment, incrementAsync, selectCount, selectUserCartItems, updateCartAsync } from "./cartSlice";
+import { deleteItemFromCartAsync, fetchItemByUserIDAsync, increment, incrementAsync, selectCartLoaded, selectCount, selectUserCartItems, updateCartAsync } from "./cartSlice";
 
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -14,6 +14,7 @@ export default function Cart() {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(true);
   const products = useSelector(selectUserCartItems)
+  const cartLoaded = useSelector(selectCartLoaded)
 
   const totalAmount = products.reduce((amount, item)=> discountedPrice(item.product) * item.quantity +amount,0)
   const totalItems = products.reduce((total, item)=>item.quantity +total,0)
@@ -28,7 +29,7 @@ export default function Cart() {
 
   return (
     <>
-    {products.length===0 && <Navigate to="/"></Navigate>}
+    {products.length===0 && cartLoaded && <Navigate to="/"></Navigate>}
     <div className="mx-auto mt-12 max-w-7xl bg-white px-4 sm:px-6 lg:px-8">
       <div>
         <div className="border-t border-gray-200 px-4 py-6 sm:px-6">

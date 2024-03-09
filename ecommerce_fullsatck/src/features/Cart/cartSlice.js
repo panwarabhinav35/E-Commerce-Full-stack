@@ -6,6 +6,7 @@ const initialState = {
   items: [],
   userItems : [],
   status: 'idle',
+  cartLoaded : false,
 };
 
 
@@ -74,6 +75,11 @@ export const cartSlice = createSlice({
       .addCase(fetchItemByUserIDAsync.fulfilled, (state, action) => {
         state.status = 'idle';
         state.userItems=action.payload;
+        state.cartLoaded = true;
+      })
+      .addCase(fetchItemByUserIDAsync.rejected, (state, action) => {
+        state.status = 'idle';
+        state.cartLoaded = true;
       })
       .addCase(updateCartAsync.pending, (state) => {
         state.status = 'loading';
@@ -106,5 +112,6 @@ export const { increment} = cartSlice.actions;
 
 export const selectCartItems = (state) => state.cart.items;
 export const selectUserCartItems = (state) => state.cart.userItems;
+export const selectCartLoaded = (state) => state.cart.cartLoaded;
 
 export default cartSlice.reducer;
