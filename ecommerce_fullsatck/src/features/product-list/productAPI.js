@@ -22,8 +22,12 @@ export function fetchAllProductByFilter(filter, sort, pagination, admin) {
   for (let key in filter) {
     const catValue = filter[key];
     if (catValue.length > 0) {
-      const lastCatValue = catValue[catValue.length - 1];
-      queryString += `${key}=${lastCatValue}&`;
+      let s=""
+      for(let item of catValue){
+        s=s+item+"_"
+      }
+      // const lastCatValue = catValue[catValue.length - 1];
+      queryString += `${key}=${s}&`;
     }
   }
   for (let key in pagination) {
