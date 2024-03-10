@@ -36,7 +36,7 @@ import AdminHome from "./pages/AdminHome";
 import AdminProductDetailPage from "./pages/AdminProductDetailPage";
 import AdminProductFormPage from "./pages/AdminProductFormPage";
 import AdminOrdersPage from "./pages/AdminOrdersPage";
-import StripeCheckout from "./pages/StripeCheckout";
+import RazorPayCheckOut from "./pages/RazorPayCheckout";
 
 const router = createBrowserRouter([
   {
@@ -140,10 +140,10 @@ const router = createBrowserRouter([
     element: <ForgotPasswordPage></ForgotPasswordPage>,
   },
   {
-    path: "/stripe-checkout",
+    path: "/razorpay-checkout",
     element: (
       <Protected>
-        <StripeCheckout></StripeCheckout>
+        <RazorPayCheckOut></RazorPayCheckOut>
       </Protected>
     ),
   },
